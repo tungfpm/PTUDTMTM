@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+#container {
+    background-color: pink;
+}
+#header-top{
+    background-color: lightpink;
+    height: 10px;
+}
+#header{
+    margin: auto;
+    width: 960px;
+    position: relative; /*quan hệ giữa các phần tử trong header*/
+
+}
+
+#viewcheck{
+     position: absolute;
+     z-index: 1;
+     top: 12px;
+     right:15px;
+ }
+#viewcheck a{
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+#viewcheck a:hover{
+    color: red;
+}
+
+#header a ,#header a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+#menu{
+    position: absolute;
+    z-index: 1; /*làm cho nổi lên trên ảnh */
+    bottom: 12px;
+
+}
+li {
+    list-style: none;
+    display: inline;
+    padding: 40px;
+    font-family: "CorbenBold";
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+#header li a:hover{
+    color: red;
+}
+
+#content{
+    margin: auto;
+    width: 900px;
+    padding-top: 20px;
+}
+.cell {
+    width: 445px;
+    height: 350px;
+    margin-right: 5px;
+    float: left;
+}
+.cell a {
+    float: right;
+    margin-right: 10px;
+}
+#footer{
+    width: 1400px;
+    height: 100px;
+}
+#logo{
+    width: 500px;
+    float: left;
+    background-color: pink;
+}
+
+

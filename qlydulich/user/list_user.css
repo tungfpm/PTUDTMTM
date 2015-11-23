@@ -1,0 +1,9 @@
+﻿body {
+	width:600px;
+	margin: 100px auto;
+	background:rgba(97, 136, 5, 0.32);
+}
+
+table tr td{
+font-weight:bold;
+}

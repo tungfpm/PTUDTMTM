@@ -1,0 +1,43 @@
+.form{font-family:Times New Roman, Tahoma 14px;
+	padding:20px;
+	border: 1px solid;
+    width: 400px;
+    margin: 100px auto;
+    background: rgba(97, 136, 5, 0.32);
+    border-radius: 9px;
+	margin-left: 35%;
+	border-collapse:separate;
+	border-spacing:2px;
+}
+
+label{
+	float:left;
+	width:150px;
+	
+}
+.form form h2{
+	text-align:center;
+	border-bottom:1px solid;
+	margin: 15px 45px;
+    padding: 0px 0 10px 0px;
+}
+.form form input[type='text'],input[type='date']{
+	padding: 5px;
+    width: 200px;
+    border-radius: 3px;
+    margin-left: 0;
+	margin-bottom:15px;
+	border-collapse:separate;
+	border-spacing:2px;
+	float:New;
+}
+.form form div{
+	width:100%;
+	margin: 0 15px;
+}
+.form form input[type='submit']{
+	margin-top:15px;
+	padding:5px;
+	width:100px;
+	margin-left:50px;
+}

@@ -1,0 +1,343 @@
+html {
+    font-family: "Trebuchet MS",sans-serif,Arial,Helvitica;
+}
+a:hover {text-decoration: none;}
+.clear {clear: both;}
+.no-margin {margin: 0px;}
+.left{float: left;}
+.wrapper {
+	background: url("../images/bg-body.jpg") repeat;
+}
+.header-top {
+	background-color: yellow;
+  	padding-top:15px;
+  	border-bottom: 2px solid goldenrod;
+}
+.bgimage {
+    background: transparent url("../images/bg-header.jpg") no-repeat scroll center top;
+    background-size: 98.5%;
+    position: relative;
+}
+.bgimage-inside {
+    padding-top: 35.42%; /* this is actually (340/960)*100 */
+}
+.connect{
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+    padding: 1%;
+}
+.connect a {
+    display: inline-block;
+}
+#fb, #tw, #vm {
+    background: transparent url("../images/icons.gif") no-repeat;
+}
+#fb{
+	background-position: 0px 0px;
+	width: 53%;
+    background-size: 135%;
+}
+#tw {
+    background-position: 0px 47%;
+    width: 60%;
+    background-size: 103%;
+}
+#vm {
+    background-position: 0px 99%;
+    width: 56%;
+    background-size: 107%;
+}
+.bgfb-inside{
+    padding-top: 105%;
+}
+.bgtw-inside{
+    padding-top: 95%;
+}
+.bgvm-inside{
+    padding-top: 105%;
+}
+.infor{
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    padding: 1%;
+    margin-top: 1%;
+}
+.infor a{
+    padding: 0;
+    margin: 0 4%;
+    font-size: 14px;
+}
+
+.menu{
+    position: absolute;
+    bottom: 0.5%;
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 40px;
+    font-family: "CorbenBold";
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.menu li a {color: #9D7912;}
+.menu li a:hover {color: #fff;}
+#selected{color: #fff;}
+
+.content{
+    color: #9D7912;
+    font-size: 20px;
+}
+.sale{
+    margin-top: 10px;
+}
+.border-img img{
+	border: 1px gray solid;
+}
+.border-img{
+	background-color: #fff;
+	padding: 5px;
+}
+.shirt-border{
+	padding: 15px;
+}
+
+.hr-dot{	
+	margin : 15px 0px;
+	background: url("../images/border-dashed.jpg") repeat-x;
+	height: 2px;
+}
+.hr-dotted{
+	background: url("../images/border-dashed.jpg") repeat-x center;
+}
+.button{
+    position: relative;
+}
+.button span{
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    display: block;
+    color: #8E7217;
+    font-family: "CorbenBold";
+    font-size: 18px;
+}
+.footer{
+    margin-top: 2%;
+}
+.logo p, .logo a{
+    color: #9D7912;
+    font-size: 11px;
+}
+.description{
+    color: #9D7912;
+    font-size: 13px;
+    text-align: justify;
+}
+.description a{
+    color: #9D7912;
+    text-decoration: underline;
+}
+.nav-footer{
+    padding-bottom: 8%;
+    color: #FFF;
+}
+.nav-footer li{
+    display: inline;
+}
+.nav-footer a{
+    color: #FFF;
+    font-size: 14px;
+    margin: 0px 2%;
+    text-shadow: 1px 1px 0px #AF9E31;
+}
+.nav-footer a:hover , #selected-footer{
+    color: #9D7912;
+}
+#selected-footer:hover{
+    color: #fff;
+}
+
+
+@font-face {
+  font-family: "CorbenBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/corben-bold-webfont.woff") format("woff"), 
+  url("../fonts/corben-bold-webfont.ttf") format("truetype"), 
+  url("../fonts/corben-bold-webfont.svg") format("svg");
+}
+
+@media screen and (max-width: 1200px) {
+    .button span{
+        position: absolute;
+        top: 17%;
+        left: 17%;
+        font-size: 16px;
+    }
+    .menu li {
+        padding: 0px 30px;
+        font-size: 20px;
+    }
+    .content{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .menu li {
+        padding: 0px 28px;
+        font-size: 19px;
+    }
+    .menu{
+        bottom: 0.5%;
+    }
+    .content{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .infor a, .infor {
+        font-size: 12px;
+    }
+    .border-img{
+        width: 76%;
+    }
+    .button span{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        font-size: 17px;
+    }
+    .menu li {
+        padding: 0px 18px;
+        font-size: 18px;
+    }
+    .menu{
+        bottom: -2%;
+    }
+    .content{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 668px) {
+
+    .menu li {
+        padding: 0px 16px;
+        font-size: 17px;
+    }
+    .menu{
+        bottom: -5%;
+    }
+    .content{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 598px) {
+    .infor a, .infor, .connect {
+        font-size: 10px;
+        padding: 0.5%;
+    }
+    .border-img{
+        width: 100%;
+    }
+    .button span{
+        position: absolute;
+        top: 19%;
+        left:19%;
+        font-size: 14px;
+    }
+    .menu li {
+        padding: 0px 12px;
+        font-size: 14px;
+    }
+    .menu{
+        bottom: -9%;
+    }
+    .nav-footer a, .nav-footer{
+        font-size: 12px;
+        margin: 1% ;
+    }
+    .content{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 498px) {
+    .menu li {
+        padding: 0px 10px;
+        font-size: 11px;
+    }
+    .menu{
+        bottom: -11%;
+    }
+    .content{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 413px) {
+    .infor, .connect  {
+        font-size: 7px;
+        padding: 0.3%;
+    }
+    .infor a {
+        font-size: 7px;
+    }
+    .border-img{
+        width: 100%;
+    }
+    .button span{
+        position: absolute;
+        top: 15%;
+        left: 17%;
+        font-size: 10px;
+    }
+    .logo a, .logo p{
+        font-size: 10px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .menu li {
+        padding: 0px 8px;
+        font-size: 8px;
+        font-weight: inherit;
+    }
+    .menu{
+        bottom: -15%;
+    }
+    .nav-footer a, .nav-footer{
+        font-size: 11px;
+        margin: 1% ;
+        text-shadow: 0.5px 0.5px 0px #AF9E31;
+    }
+}
+@media screen and (max-width: 325px) {
+    .button span{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        font-size: 7px;
+    }
+    .logo p, .logo a{
+        font-size: 9px;
+    }
+    .description{
+        font-size: 11px;
+    }
+    .menu li {
+        padding: 0px 3px;
+        font-size: 8px;
+        font-weight: inherit;
+    }
+    .menu{
+        bottom: -20%;
+    }
+    .nav-footer a, .nav-footer{
+        font-size: 9px;
+        margin: 0px ;
+        text-shadow: 0.5px 0.5px 0px #AF9E31;
+    }
+}
+
