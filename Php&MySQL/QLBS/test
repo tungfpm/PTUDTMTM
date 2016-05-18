@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="date" name ="date" min="1945-1-1" >
+</body>
+</html>

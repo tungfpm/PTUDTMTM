@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tùng</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		label{
+			float: left;
+			width: 100px;
+		}
+		td {
+			padding-left: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		function isEmail(email) {
+			var isValid = false;
+			var regex = /\@/;
+			if(regex.test(email.value)) {
+				isValid = true;
+			}
+			return isValid;
+		}
+		function check_email(value){
+			if (!isEmail(value)) {
+				alert("Email thiếu @ !");
+			}
+		}
+		function check(vl){
+			if (vl.value == "") {
+				alert("Yêu cầu nhập !");
+				vl.focus();
+			}				
+			if (tungfpm.fuser.value != "" && tungfpm.fpass.value != "" && tungfpm.fpass2.value != "" 
+				&& tungfpm.femail.value != "" && isEmail(tungfpm.femail.value)) {
+				tungfpm.submit.disabled = false;
+			} else {
+				tungfpm.submit.disabled = true;
+			}			
+		}
+	</script>
+</head>
+<body>
+<form action="" name="tungfpm" method="post" enctype="part/mutipart">
+	<table border="1px solid" align="center" cellspacing="0" width="450px"><tr><td>
+		<h2>Hãy nhập thông tin vào form đăng kí</h2>
+		<p>Với việc nhập các thông tin cá nhân và submit form, bạn đã đồng <br>
+			ý với các điều khoản của trang web chúng tôi.</p>
+		<p><label>Username:*</label><input type="text" name="fuser" onblur="check(this)"></p>
+		<p><label>Password:*</label><input type="password" name="fpass" onblur="check(this)"></p>
+		<p><label>Retpe pass:*</label><input type="password" name="fpass2" onblur="check(this)"></p>
+		<p><label>Country:</label>
+		<select>
+			<option value="vn">Việt Nam</option>
+			<option value="usa">Mỹ</option>
+			<option value="rus">Nga</option>
+		</select></p>
+		<p><label>Email:*</label><input type="email" name="femail" onblur="check(this),check_email(this)"></p>
+		<p><label>Your Avatar:</label><input type="file" name="fava"></p>
+		<p><label>Favourite:</label><textarea rows="7" cols="30"></textarea></p>
+		<p><label>&nbsp</label>
+			<input type="submit" name="submit" value="Create Account" disabled="">
+			<input type="reset" name="reset" value="Reset">
+		</p>
+	</td></tr></table>
+</form>
+</body>
+</html>
